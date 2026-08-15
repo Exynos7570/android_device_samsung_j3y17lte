@@ -15,7 +15,7 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/on7xelte/device.mk)
+$(call inherit-product, device/samsung/j3y17lte/device.mk)
 
 # Inherit from those products. Most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -24,8 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_on7xelte
-PRODUCT_DEVICE := on7xelte
+PRODUCT_NAME := lineage_j3y17lte
+PRODUCT_DEVICE := j3y17lte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung

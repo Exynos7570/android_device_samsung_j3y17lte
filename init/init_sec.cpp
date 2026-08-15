@@ -12,7 +12,7 @@
 
 #include "init_sec.h"
 
-#define MODEL_NAME_LEN 5  // e.g. "G610F"
+#define MODEL_NAME_LEN 1  // e.g. "G610F"
 #define BUILD_NAME_LEN 8  // e.g. "DDU1BQH9"
 #define CODENAME_LEN   10 // e.g. "on7xeltedd"
 
@@ -38,7 +38,7 @@ void vendor_load_properties()
     const std::string bootloader = android::base::GetProperty("ro.bootloader", "");
     const std::string bl_model = bootloader.substr(0, MODEL_NAME_LEN);
     const std::string bl_build = bootloader.substr(BUILD_NAME_LEN);
-    const std::string device = "on7xelte";
+    const std::string device = "j3y17lte";
 
     std::string model;
     std::string name;
@@ -55,11 +55,11 @@ void vendor_load_properties()
 
     if (name.size() == 0) {
         LOG(ERROR) << "Could not detect codename, forcing on7xeltedd";
-        name = "on7xeltedd";
+        name = "j3y17lteser";
     }
 
-    description = "on7xeltedd-user 7.0 NRD90M G610FDDU1BRG2 release-keys";
-    fingerprint = "samsung/on7xeltedd/on7xelte:7.0/NRD90M/G610FDDU1BRG2:user/release-keys";
+    description = "j3y17lteser-user 9 PPR1.180610.011 J330FXXS4CUD4 release-keys";
+    fingerprint = "samsung/j3y17lteser/j3y17lte:9/PPR1.180610.011/J330FXXS4CUD4:user/release-keys";
 
     LOG(INFO) << "Found bootloader: %s", bootloader.c_str();
     LOG(INFO) << "Setting ro.product.model: %s", model.c_str();
