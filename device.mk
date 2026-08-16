@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 -include $(LOCAL_PATH)/product/*.mk
 
 # Inherit from Exynos7870-common
-$(call inherit-product, device/samsung/exynos7870-common/device-common.mk)
+$(call inherit-product, device/samsung/exynos7570-common/device-common.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/j3y17lte/j3y17lte-vendor.mk)
