@@ -17,7 +17,7 @@
 TARGET_OTA_ASSERT_DEVICE := j3y17lte,j3y17lteser,j3y17ltexx
 
 # Inherit from Exynos7870-common
-include device/samsung/exynos7870-common/BoardConfigCommon.mk
+include device/samsung/exynos7570-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/samsung/j3y17lte
 
