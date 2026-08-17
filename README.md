@@ -13,7 +13,7 @@ Copyright (C) 2026 NotNoelChannel
 ------------------------------------------------------------------
 ## LineageOS 16.0 Recovery
 - [x] it boots
-- [] touch works
+- [ ]  touch works
 - [x] volume buttons
 - [x] partitions mounting
 - [x] Graphical interface 
